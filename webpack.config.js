@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackSimpleIncludePlugin = require('html-webpack-simple-include-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const fs = require('fs');
 
 
@@ -23,6 +24,14 @@ module.exports = {
   },
 
   plugins: [
+    new CopyPlugin({
+      patterns: [
+          {
+            from: path.resolve(__dirname, 'src/images'),
+            to:   path.resolve(__dirname, 'dist/images')
+          }
+        ]
+    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname,'src/index.html')
     }),
