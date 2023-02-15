@@ -3,8 +3,13 @@ import $ from "jquery";
 
 let toggle = document.querySelector('.menu input')
 $('#mobile_menu').on('click', () => {
-  console.log('aaa')
-})
-document.querySelector('body').addEventListener('click', () => {
-  toggle.checked = !toggle.checked
+  if(toggle.checked){
+    $('.slide_nav').animate({
+      left: 0
+    })
+  } else {
+    $('.slide_nav').animate({
+      left: '-100%'
+    })
+  }
 })
