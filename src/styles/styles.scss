@@ -17,11 +17,12 @@ body{
 .d-flex{
   display: flex;
 }
+.button{
+  padding: 14px 0;
+}
 .button__green{
   font-weight: 400;
   cursor: pointer;
-  font-size: 24px;
-  line-height: 30px;
   text-transform: uppercase;
   color: $white;
   border: 1px solid $green;
@@ -36,14 +37,9 @@ body{
     border: 1px solid $white;
   }
 }
-.button{
-padding: 14px 0;
-}
 .button__white{
   font-weight: 400;
   cursor: pointer;
-  font-size: 24px;
-  line-height: 30px;
   text-transform: uppercase;
   color: $white;
   padding: 14px 10px;
@@ -59,8 +55,6 @@ padding: 14px 0;
 .button__background__white{
   font-weight: 400;
   cursor: pointer;
-  font-size: 24px;
-  line-height: 30px;
   text-transform: uppercase;
   color: $green;
   border: 1px solid $green;
@@ -76,8 +70,6 @@ padding: 14px 0;
 .button__border__white{
   font-weight: 400;
   cursor: pointer;
-  font-size: 24px;
-  line-height: 30px;
   text-transform: uppercase;
   color: $white;
   border: 1px solid $white;
@@ -94,8 +86,24 @@ padding: 14px 0;
   opacity: 60%;
 }
 @media screen and (min-width: 1440px) {
+  .button__green{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .button__white{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .button__background__white{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .button__border__white{
+    font-size: 24px;
+    line-height: 30px;
+  }
   .container{
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   .header{
@@ -261,8 +269,7 @@ padding: 14px 0;
     .left{
       padding-top: 115px;
       width: 50%;
-      padding-left: 240px;
-      padding-right: 150px;
+      padding-left: 50px;
       h3{
         font-weight: 400;
         font-size: 24px;
@@ -302,9 +309,10 @@ padding: 14px 0;
       }
     }
     .right{
+      width: 50%;
       iframe{
         vertical-align: bottom;
-        width: 950px;
+        width: 100%;
         height: 570px;
       }
     }
@@ -341,10 +349,892 @@ padding: 14px 0;
       }
     }
   }
+  .mobile{
+    display: none;
+  }
+  .header__mobile__nav{
+    display: none;
+  }
+  .mobile_logo{
+    display: none;
+  }
 }
 @media screen and (min-width: 1140px) and (max-width: 1440px){
+  .button__green{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button__white{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button__background__white{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button__border__white{
+    font-size: 20px;
+    line-height: 25px;
+  }
   .container{
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
   }
+  .header{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    &__nav{
+      display: flex;
+      gap: 60px;
+      a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover{
+          color: $green;
+        }
+      }
+    }
+  }
+  .first{
+    &_bg{
+      background: url('../images/first_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    .left{
+      width: 50%;
+      h1{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: $white;
+      }
+      .buttons{
+        margin-top: 50px;
+        display: flex;
+        gap: 40px;
+      }
+    }
+    .right{
+      width: 50%;
+      span{
+        float: right;
+      }
+    }
+  }
+  .two{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &_bg{
+      background: $green url('../images/two_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 20px;
+    }
+    .services_head{
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $white;
+      .name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 10px;
+      }
+      .price{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 10px;
+      }
+    }
+    .services_body{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed $white;
+      .name{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $white;
+        span{
+          font-size: 14px;
+        }
+      }
+      .price{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+    .buttons{
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  .three{
+    padding-top: 145px;
+    padding-bottom: 145px;
+    &_bg{
+      background: url('../images/three_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    display: flex;
+    align-items: center;
+    .left{
+      width: 50%; 
+      .sertificate{
+        background: url('../images/sertificate.svg') no-repeat center center;
+      } 
+    }
+    .right{
+      padding-left: 120px;
+      width: 50%;
+      p{
+        margin-top: 140px;
+        font-weight: 500;
+        // padding-right: 10px;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+        color: $white;
+      }
+      span{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+  .four{
+    display: flex;
+    .left{
+      padding-top: 60px;
+      width: 50%;
+      padding-left: 50px;
+      h3{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+      }
+      h2{
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: $white;
+      }
+      .buttons{
+        margin-top: 30px;
+        display: flex;
+        gap: 40px;
+        align-items:center;
+      }
+      .address{
+        margin-top: 60px;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        div,a{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+          color: $white;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          &:hover{
+            color: $green;
+          }
+        }
+      }
+    }
+    .right{
+      width: 50%;
+      iframe{
+        vertical-align: bottom;
+        width: 100%;
+        height: 425px;
+      }
+    }
+  }
+  .footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid $white;
+    .left{
+      width: 50%;
+      .info{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        span{
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: $white;
+        }
+      }
+    }
+    .right{
+      width: 50%;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .soc{
+        display: flex;
+        gap: 15px;
+        align-items:center;
+      }
+    }
+  }
+  .mobile{
+    display: none;
+  }
+  .header__mobile__nav{
+    display: none;
+  }
+  .mobile_logo{
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1140px){
+  .button__green{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button__white{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button__background__white{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .button__border__white{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .container{
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  .header{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    &__nav{
+      display: flex;
+      gap: 60px;
+      a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover{
+          color: $green;
+        }
+      }
+    }
+  }
+  .first{
+    &_bg{
+      background: url('../images/first_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    .left{
+      width: 50%;
+      h1{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: $white;
+      }
+      .buttons{
+        margin-top: 50px;
+        display: flex;
+        gap: 40px;
+      }
+    }
+    .right{
+      width: 50%;
+      span{
+        float: right;
+      }
+    }
+  }
+  .two{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &_bg{
+      background: $green url('../images/two_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 20px;
+    }
+    .services_head{
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $white;
+      .name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 10px;
+      }
+      .price{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 10px;
+      }
+    }
+    .services_body{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed $white;
+      .name{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $white;
+        span{
+          font-size: 14px;
+        }
+      }
+      .price{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+    .buttons{
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  .three{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &_bg{
+      background: url('../images/three_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    display: flex;
+    align-items: center;
+    .left{
+      width: 50%; 
+      .sertificate{
+        background: url('../images/sertificate.svg') no-repeat center center;
+      } 
+    }
+    .right{
+      padding-left: 80px;
+      width: 50%;
+      p{
+        margin-top: 100px;
+        font-weight: 500;
+        // padding-right: 10px;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+        color: $white;
+      }
+      span{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+  .four{
+    display: flex;
+    .left{
+      padding-top: 60px;
+      width: 50%;
+      padding-left: 40px;
+      h3{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+      }
+      h2{
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: $white;
+      }
+      .buttons{
+        margin-top: 30px;
+        display: flex;
+        gap: 40px;
+        align-items:center;
+      }
+      .address{
+        margin-top: 60px;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        div,a{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+          color: $white;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          &:hover{
+            color: $green;
+          }
+        }
+      }
+    }
+    .right{
+      width: 50%;
+      iframe{
+        vertical-align: bottom;
+        width: 100%;
+        height: 425px;
+      }
+    }
+  }
+  .footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid $white;
+    .left{
+      width: 50%;
+      .info{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        span{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: $white;
+        }
+      }
+    }
+    .right{
+      width: 50%;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .soc{
+        display: flex;
+        gap: 15px;
+        align-items:center;
+      }
+    }
+  }
+  .mobile{
+    display: none;
+  }
+  .header__mobile__nav{
+    display: none;
+  }
+  .mobile_logo{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button__green{
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .button__white{
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .button__background__white{
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .button__border__white{
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .container{
+    margin: 0 20px;
+  }
+  .header{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__logo{
+      .logo_head{
+        display: none;
+      }
+    }
+    &__nav{
+      display: none;
+    }
+  }
+  .first{
+    &_bg{
+      background: url('../images/first_bg.png') no-repeat center center;
+      background-size: cover;
+    }
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    .left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1{
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+      }
+      .buttons{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      .first_logo{
+        margin-top: 20px;
+        width: 120px;
+      }
+    }
+    .right{
+      display: none;
+    }
+  }
+  .two{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    &_bg{
+      background: $green url('../images/two_bg_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 20px;
+    }
+    .services_head{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $white;
+      .name{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 5px;
+      }
+      .price{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 5px;
+      }
+    }
+    .services_body{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed $white;
+      .name{
+        width: 80%;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: $white;
+        span{
+          display: block;
+          font-size: 8px;
+          word-break: break-word;
+        }
+      }
+      .price{
+        width: 20%;
+        text-align: right;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+    .buttons{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  .three{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &_bg{
+      background: url('../images/three_bg_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .right{
+      p{
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+        text-align: justify;
+        color: $white;
+      }
+      span{
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+  .four{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    .left{
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+        text-align: center;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: $white;
+      }
+      h2{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+      }
+      .buttons{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        align-items:center;
+      }
+      .address{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div,a{
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: $white;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          &:hover{
+            color: $green;
+          }
+        }
+      }
+    }
+    .right{
+      margin-top: 10px;
+      iframe{
+        vertical-align: bottom;
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+  .footer{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-top: 1px solid $white;
+    .left{
+      width: 50%;
+      .info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span{
+          font-weight: 400;
+          font-size: 8px;
+          line-height: 10px;
+          text-transform: uppercase;
+          color: $white;
+          i{
+            width: 6px;
+          }
+        }
+      }
+    }
+    .right{
+      width: 50%;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      .soc{
+        display: flex;
+        gap: 5px;
+        align-items:center;
+        i{
+          width: 16px;
+        }
+      }
+      .created{
+        i{
+          width: 30px;
+        }
+      }
+    }
+  }
+  .header__mobile__nav{
+    position: absolute;
+    left: 0;
+    .menu {
+      display: block;
+      width: 35px;
+      height: 27px;
+      position: relative;
+      cursor: pointer;
+      div {
+          position: absolute;
+          height: 2px;
+          border-radius: 2px;
+          background: $white;
+          transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6), width .2s ease .2s;
+      }
+      input {
+          display: none;
+          & + div {
+              top: 50%;
+              left: 0;
+              margin: -2px 0 0 0;
+              width: 30px;
+              transform-origin: 50% 50%;
+              & + div {
+                  top: 2px;
+                  left: 0;
+                  width: 35px;
+                  transform-origin: 0 50%;
+                  & + div {
+                      bottom: 2px;
+                      right: 0;
+                      width: 25px;
+                      transform-origin: 100% 50%;
+                      transform: translate(-9px, 0);
+                  }
+              }
+          }
+          &:checked + div {
+              transform: rotate(-45deg);
+              transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6) .1s;
+              & + div {
+                  width: 15px;
+                  transform: translate(6px, 0) rotate(45deg);
+                  transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6) .1s, width .2s ease;
+                  & + div {
+                      width: 15px;
+                      transform: translate(-8px, 0) rotate(45deg);
+                      transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6) .1s, width .2s ease;
+                  }
+              }
+          }
+      }
+    }
+  }
+
 }
