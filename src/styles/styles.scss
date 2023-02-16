@@ -355,6 +355,13 @@ html {
         gap: 15px;
         align-items:center;
       }
+      .created{
+        a{
+          i{
+            width: 100px;
+          }
+        }
+      }
     }
   }
   .mobile{
@@ -631,6 +638,13 @@ html {
         display: flex;
         gap: 15px;
         align-items:center;
+      }
+      .created{
+        a{
+          i{
+            width: 100px;
+          }
+        }
       }
     }
   }
@@ -909,6 +923,13 @@ html {
         gap: 15px;
         align-items:center;
       }
+      .created{
+        a{
+          i{
+            width: 100px;
+          }
+        }
+      }
     }
   }
   .mobile{
@@ -933,10 +954,16 @@ html {
   .button__background__white{
     font-size: 10px;
     line-height: 13px;
+    &:hover{
+      box-shadow: none;
+    }
   }
   .button__border__white{
     font-size: 10px;
     line-height: 13px;
+    &:hover{
+      box-shadow: none;
+    }
   }
   .container{
     margin: 0 20px;
