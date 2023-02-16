@@ -1,5 +1,6 @@
 import './styles/styles.scss';
 import $ from "jquery";
+import AOS from 'aos';
 
 let toggle = document.querySelector('.menu input')
 $('#mobile_menu').on('click', () => {
@@ -22,3 +23,8 @@ $('#view_services').on('click', () => {
     $('#view_services').text('Скрыть услуги')
   }
 })
+
+
+AOS.init({
+  startEvent: 'DOMContentLoaded',
+});

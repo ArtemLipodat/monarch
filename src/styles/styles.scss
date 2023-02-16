@@ -2,6 +2,7 @@
 @import '~modern-css-reset';
 @import './vars';
 @import './icons';
+@import '../../node_modules/aos/src/sass/aos.scss';
 
 body{
   background-color: $bg-color;
