@@ -12,8 +12,11 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <title>Измени представление о себе с барбершопом MONARCH</title>
 </head>
-<body>
+<body style="overflow-x: hidden;">
 <div class="first_bg">
+  <video autoplay muted loop id="myVideo">
+    <source src="./images/video.mp4" type="video/mp4">
+  </video>
   <!-- Header -->
   <include-header />
   <!-- end Header -->
@@ -27,7 +30,7 @@
             <a href="https://n868534.yclients.com/" target="_blank" class="button__green">записаться</a>
           </div>
           <div class="button">
-            <a href="https://n868534.yclients.com/" target="_blank" class="button__white">ИДУ ПЕРВЫЙ РАЗ</a>
+            <a href="https://n868534.yclients.com/" target="_blank" class="button__white">ПОЛУЧИТЬ СКИДКУ</a>
           </div>
         </div>
       </div>
@@ -45,31 +48,19 @@
         <h3 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">УСЛУГИ</h3>
         <div class="services_head">
           <div class="name">СТРИЖКИ</div>
-          <div class="price">стоимость</div>
+          <div class="price">
+            <div>Барбер /</div>
+            <div>Топ-Барбер</div>
+          </div>
         </div>
         <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="services_body">
           <div class="name">
             МУЖСКАЯ СТРИЖКА <span class="opacity-6">любой сложности с использованием машинки и механических инструментов</span>
           </div>
-          <div class="price">990,00 ₽</div>
-        </div>
-        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="services_body">
-          <div class="name">
-            МУЖСКАЯ СТРИЖКА для юного джентельмена <span class="opacity-6">(до 12 лет)</span>
+          <div class="price">
+            <div>990,00 ₽ /</div>
+            <div>990,00 ₽</div>
           </div>
-          <div class="price">790,00 ₽</div>
-        </div>
-        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="services_body">
-          <div class="name">
-            МУЖСКАЯ СТРИЖКА машинкой <span class="opacity-6">(2 длины)</span>
-          </div>
-          <div class="price">590,00 ₽</div>
-        </div>
-        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="services_body">
-          <div class="name">
-            мужская стрижка ножницами <span class="opacity-6">работа механическими инструментами, с использованием окантовочной машинки</span>
-          </div>
-          <div class="price">1290,00 ₽</div>
         </div>
         <div id="services__list" class="close" style="display:none;">
           <div class="services_head">
@@ -81,24 +72,6 @@
             </div>
             <div class="price">590,00 ₽</div>
           </div>
-          <div class="services_body">
-            <div class="name">
-              МОДЕЛИРОВАНИЕ БОРОДЫ <span class="opacity-6">Комплексная услуга включающая в себя коррекцию длины, придание формы бороде и усам, распаривание И выведение четких контуров опасной бритвой</span>
-            </div>
-            <div class="price">790,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              КОРОЛЕВСКОЕ БРИТЬЕ <span class="opacity-6">Это традиционный ритуал, состоящий из нескольких этапов: распаривание кожи с маслами и кремом до бритья, взбиванием и нанесением пены, бритье опасной бритвой, холодный компресс и нанесением средства после бритья</span>
-            </div>
-            <div class="price">990,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              БРИТЬЕ ГОЛОВЫ ОПАСНОЙ БРИТВОЙ <span class="opacity-6">БРИТЬЕ ГОЛОВЫ ОПАСНОЙ БРИТВОЙ НАЧИСТО С ИСПОЛЬЗОВАНИЕМ МАСЕЛ И РАСПАРИВАНИЕМ КОЖИ ГОЛОВЫ ПОЛОТЕНЦАМИ</span>
-            </div>
-            <div class="price">990,00 ₽</div>
-          </div>
           <div class="services_head">
             <div class="name">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</div>
           </div>
@@ -108,60 +81,6 @@
             </div>
             <div class="price">200,00 ₽</div>
           </div>
-          <div class="services_body">
-            <div class="name">
-              ВОСК КОМПЛЕКС <span class="opacity-6">УДАЛЕНИЕ НЕЖЕЛАТЕЛЬНЫХ ВОЛОС С ПОМОЩЬЮ ВОСКА НА ЛИЦЕ БОЛЕЕ ДВУХ ЗОН</span>
-            </div>
-            <div class="price">300,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              ПАТЧИ <span class="opacity-6">АКТИВНО ПИТАЮТ И ВОССТАНАВЛИВАЮТ ЭЛАСТИЧНОСТЬ КОЖИ ВОКРУГ ГЛАЗ, СПОСОБСТВУЮТ УМЕНЬШЕНИЮ ТЕМНЫХ КРУГОВ, ОТЕЧНОСТИ И МОРЩИН</span>
-            </div>
-            <div class="price">200,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Volcano  <span class="opacity-6">Комплексная СПА процедура по уходу за кожей лица, благодаря которой вы приобретаете здоровый, свежий и ухоженный вид и избавитесь от отечности под глазами</span>
-            </div>
-            <div class="price">900,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Black mask <span class="opacity-6">комплексная процедура по уходу за кожей лица, позволяет очистить поры, УМЕНЬШИТь черные точки, ПРИДАТЬ ОТДОХНУВШИЙ ВИД И ЛИФТИНГ-ЭФФЕКТ </span>
-            </div>
-            <div class="price">900,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Тонирование бородЫ <span class="opacity-6">Услуга, после которОЙ волосы приобретут красивый ровный тон, а контура станут более выраженными</span>
-            </div>
-            <div class="price">800,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Тонирование головы <span class="opacity-6">Это облегчённый вариант окрашивания, который поможет Вам избавиться от седины минимум на 3 недели</span>
-            </div>
-            <div class="price">1000,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Hair tattoo <span class="opacity-6">Художественный выстриг узора машинкой или ножницами части волос, внешне напоминающий татуировку</span>
-            </div>
-            <div class="price">200,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Укладка без стрижки <span class="opacity-6">помывка головы и укладка без стрижки</span>
-            </div>
-            <div class="price">300,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              Окантовка головы <span class="opacity-6">приданиЕ контура на шее и висках (без снятия массы)</span>
-            </div>
-            <div class="price">300,00 ₽</div>
-          </div>
           <div class="services_head">
             <div class="name">Акции</div>
           </div>
@@ -170,48 +89,6 @@
               СЧАСТЛИВЫЕ ЧАСЫ <span class="opacity-6">МУЖСКАЯ СТРИЖКА ПО ПН-ЧТ С 12:00 ДО 15:00 ВКЛЮЧИТЕЛЬНО</span>
             </div>
             <div class="price">790,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              ПАПА + СЫН <span class="opacity-6">МУЖСКАЯ И ДЕТСКАЯ СТРИЖКИ</span>
-            </div>
-            <div class="price">1580,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              СТУДЕНЧЕСКАЯ СТРИЖКА <span class="opacity-6">ПН-ЧТ С 12:00 ДО 17:00 ВКЛЮЧИТЕЛЬНО ПРИ ПРЕДЪЯВЛЕНИИ СТУДЕНЧЕСКОГО БИЛЕТА</span>
-            </div>
-            <div class="price">790,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              ПЕРВОЕ ПОСЕЩЕНИЕ <span class="opacity-6">ПО ПРОМОКОДУ</span>
-            </div>
-            <div class="price">700,00 ₽</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              “ПРИВЕДИ ДРУГА” <span class="opacity-6">ЗАЧИСЛЕНИЕ 300 БОНУСНЫХ РУБЛЕЙ НА ВНУТРЕННИЙ СЧЕТ</span>
-            </div>
-            <div class="price">бесплатно</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              7 ПОСЕЩЕНИЕ БЕСПЛАТНО <span class="opacity-6">ОТМЕЧАЙ КАЖДОЕ ПОСЕЩЕНИЕ НА СПЕЦИАЛНОЙ КАРТОЧКЕ ГОСТЯ И ПОЛУЧАЙ БОНУС ОТ БАРБЕРШОПА</span>
-            </div>
-            <div class="price">бесплатно</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              СКИДКА В ДЕНЬ РОЖДЕНИЯ 10 % <span class="opacity-6">ЗА ДЕНЬ, В ДЕНЬ И НА СЛЕДУЮЩИЙ ДЕНЬ ПОСЛЕ ДНЯ РОЖДЕНИЯ</span>
-            </div>
-            <div class="price">бесплатно</div>
-          </div>
-          <div class="services_body">
-            <div class="name">
-              ПОДАРОК ЗА ОТЗЫВ <span class="opacity-6">ОСТАВЬ О БАРБЕРШОПЕ ОТЗЫВ НА КАРТАХ ГОРОДА И ПОЛУЧИ ПОДАРОК</span>
-            </div>
-            <div class="price">бесплатно</div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="buttons">
@@ -225,6 +102,47 @@
       </div>
     </div>
   </div>
+
+  <div class="five_bg">
+    <div class="container">
+      <div class="five" id="barbers">
+        <h3 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">БАРБЕРЫ</h3>
+        <div class="barbers">
+          <div class="barbers__list">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" class="barber">
+              <div class="img">
+                <img src="./images/123.png" alt="">
+              </div>
+              <div class="name">Григорий</div>
+              <div class="desc">Записавшись к Григорию, вы точно попадете к мастеру, для которого не бывает мелочей в работе. Каждая деталь вашего внешнего вида будет проработана на все 100%. Но помимо этого, вы сможете отлично провести время и быть уверенными в том, что ваши пожелания точно будут услышаны!</div>
+            </div>
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000" class="barber">
+              <div class="img">
+                <img src="./images/123.png" alt="">
+              </div>
+              <div class="name">Григорий</div>
+              <div class="desc">Записавшись к Григорию, вы точно попадете к мастеру, для которого не бывает мелочей в работе. Каждая деталь вашего внешнего вида будет проработана на все 100%. Но помимо этого, вы сможете отлично провести время и быть уверенными в том, что ваши пожелания точно будут услышаны!</div>
+            </div>
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000" class="barber">
+              <div class="img">
+                <img src="./images/123.png" alt="">
+              </div>
+              <div class="name">Григорий</div>
+              <div class="desc">Записавшись к Григорию, вы точно попадете к мастеру, для которого не бывает мелочей в работе. Каждая деталь вашего внешнего вида будет проработана на все 100%. Но помимо этого, вы сможете отлично провести время и быть уверенными в том, что ваши пожелания точно будут услышаны!</div>
+            </div>
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="4000" class="barber">
+              <div class="img">
+                <img src="./images/123.png" alt="">
+              </div>
+              <div class="name">Григорий</div>
+              <div class="desc">Записавшись к Григорию, вы точно попадете к мастеру, для которого не бывает мелочей в работе. Каждая деталь вашего внешнего вида будет проработана на все 100%. Но помимо этого, вы сможете отлично провести время и быть уверенными в том, что ваши пожелания точно будут услышаны!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="three_bg">
     <div class="container">
       <div class="three">
@@ -238,9 +156,15 @@
       </div>
     </div>
   </div>
+
   <div class="four" id="contacts">
     <div class="left">
       <div>
+        <div class="reviews">
+          <a href=""><img src="./images/2gis.svg" alt=""></a>
+          <a href=""><img src="./images/2gis.svg" alt=""></a>
+          <a href=""><img src="./images/2gis.svg" alt=""></a>
+        </div>
         <h3 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">БАРБЕРШОП <span class="color-green">MONARCH</span> - ЭТО ОСОБЕННОЕ <br>МЕСТО СО СВОЕЙ ФИЛОСОФИЕЙ</h3>
         <h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">ПРИСОЕДИНЯЙСЯ К НАМ И <br><span class="color-green">ИЗМЕНИ ПРЕДСТАВЛЕНИЕ</span></h2>
         <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" class="buttons">
@@ -248,7 +172,7 @@
             <a href="https://n868534.yclients.com/" target="_blank" class="button__green">записаться</a>
           </div>
           <div class="button">
-            <a href="https://n868534.yclients.com/" target="_blank" class="button__white">ИДУ ПЕРВЫЙ РАЗ</a>
+            <a href="https://n868534.yclients.com/" target="_blank" class="button__white">ПОЛУЧИТЬ СКИДКУ</a>
           </div>
         </div>
         <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" class="address" id="address">
