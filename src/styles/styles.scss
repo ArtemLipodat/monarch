@@ -156,16 +156,16 @@ html {
     }
   }
   .first{
+    position: relative;
     &_bg{
-      //background: url('../images/first_bg.webp') no-repeat center center;
-      //background-size: cover;
-
+      width: 100%;
       #myVideo {
         position: absolute;
-        top: 0;
+        width: 100%;
+        height: 100%;
+        top: -100px;
         z-index: -1;
         opacity: 0.4;
-        width: max-content;
       }
     }
     padding-top: 160px;
@@ -365,6 +365,10 @@ html {
     }
   }
   .five {
+    &_bg {
+      background: url('../images/five_bg.png') no-repeat center center;
+      background-size: cover;
+    }
     padding-top: 80px;
     padding-bottom: 40px;
     h3{
@@ -456,19 +460,19 @@ html {
 
 @media screen and (min-width: 1140px) and (max-width: 1440px){
   .button__green{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
   }
   .button__white{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
   }
   .button__background__white{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
   }
   .button__border__white{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
   }
   .container{
@@ -518,17 +522,17 @@ html {
   }
   .first{
     &_bg{
-      //background: url('../images/first_bg.webp') no-repeat center center;
-      //background-size: cover;
+      width: 100%;
       #myVideo {
         position: absolute;
-        top: 0;
+        width: 100%;
+        height: 100%;
+        top: -60px;
         z-index: -1;
         opacity: 0.4;
-        width: max-content;
       }
     }
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 100px;
     display: flex;
     align-items: center;
@@ -536,7 +540,7 @@ html {
       width: 50%;
       h1{
         font-weight: 400;
-        font-size: 36px;
+        font-size: 32px;
         line-height: 45px;
         color: $white;
       }
@@ -660,14 +664,11 @@ html {
   .four{
     display: flex;
     .left{
-      // padding-top: 60px;
       width: 50%;
-      // padding-left: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      // padding-top: 115px;
       h3{
         font-weight: 400;
         font-size: 16px;
@@ -722,6 +723,10 @@ html {
     }
   }
   .five {
+    &_bg {
+      background: url('../images/five_bg.png') no-repeat center center;
+      background-size: cover;
+    }
     padding-top: 80px;
     padding-bottom: 40px;
     h3{
@@ -813,20 +818,24 @@ html {
 
 @media screen and (min-width: 1024px) and (max-width: 1140px){
   .button__green{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
+    padding: 10px;
   }
   .button__white{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
+    padding: 10px;
   }
   .button__background__white{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
+    padding: 10px;
   }
   .button__border__white{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
+    padding: 10px;
   }
   .container{
     max-width: 984px;
@@ -875,17 +884,17 @@ html {
   }
   .first{
     &_bg{
-      //background: url('../images/first_bg.webp') no-repeat center center;
-      //background-size: cover;
+      width: 100%;
       #myVideo {
         position: absolute;
-        top: 0;
+        width: 100%;
+        height: 100%;
+        top: -100px;
         z-index: -1;
         opacity: 0.4;
-        width: max-content;
       }
     }
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 100px;
     display: flex;
     align-items: center;
@@ -893,12 +902,12 @@ html {
       width: 50%;
       h1{
         font-weight: 400;
-        font-size: 36px;
+        font-size: 26px;
         line-height: 45px;
         color: $white;
       }
       .buttons{
-        margin-top: 50px;
+        margin-top: 25px;
         display: flex;
         gap: 40px;
       }
@@ -1079,6 +1088,10 @@ html {
     }
   }
   .five {
+    &_bg {
+      background: url('../images/five_bg.png') no-repeat center center;
+      background-size: cover;
+    }
     padding-top: 80px;
     padding-bottom: 40px;
     h3{
@@ -1232,15 +1245,11 @@ html {
   }
   .first{
     &_bg{
-      //background: url('../images/first_bg.webp') no-repeat center center;
-      //background-size: cover;
+      background: url('../images/first_bg.webp') no-repeat center center;
+      background-size: cover;
 
       #myVideo {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        opacity: 0.4;
-        width: max-content;
+        display: none;
       }
     }
     padding-top: 40px;
@@ -1442,6 +1451,10 @@ html {
     }
   }
   .five {
+    &_bg {
+      background: url('../images/five_bg.png') no-repeat center center;
+      background-size: cover;
+    }
     padding: 40px 0;
     h3{
       font-weight: 400;
