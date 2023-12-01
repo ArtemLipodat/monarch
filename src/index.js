@@ -1,6 +1,7 @@
 import './styles/styles.scss';
 import $ from "jquery";
 import AOS from 'aos';
+import './modal';
 
 let toggle = document.querySelector('.menu input')
 $('#mobile_menu').on('click', () => {

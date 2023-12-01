@@ -30,7 +30,7 @@
             <a href="https://n868534.yclients.com/" target="_blank" class="button__green">записаться</a>
           </div>
           <div class="button">
-            <a href="https://n868534.yclients.com/" target="_blank" class="button__white">ПОЛУЧИТЬ СКИДКУ</a>
+            <a class="button__white js-modal" data-modal="#modal_1">ПОЛУЧИТЬ СКИДКУ</a>
           </div>
         </div>
       </div>
@@ -191,8 +191,31 @@
   <include-footer />
   <!-- end Footer -->
 
-<div id="modal">
-  aaaaaaaaaaaaaaaaaaaaaaaa
+
+<div id="modal_1" class="modal-window">
+  <h3>ПОЛУЧИТЬ СКИДКУ</h3>
+  <h4>иду в первый раз</h4>
+  <form action="/#wpcf7-f61-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+    <div style="display: none;">
+      <input type="hidden" name="_wpcf7" value="61">
+      <input type="hidden" name="_wpcf7_version" value="5.8.3">
+      <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f61-o1">
+      <input type="hidden" name="_wpcf7_container_post" value="0">
+      <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+    </div>
+    <p><label> Ваше имя<br>
+      <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"></span> </label>
+    </p>
+    <p><label> Ваш номер<br>
+      <span class="wpcf7-form-control-wrap" data-name="tel-888"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" value="" type="tel" name="tel-888"></span></label>
+    </p>
+    <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>
+    </p><div class="wpcf7-response-output" aria-hidden="true"></div>
+  </form>
 </div>
+<!-- /#modal_1 -->
+<div class="modal-window__backdrop hidden" id="modal-backdrop"></div>
+
 </body>
 </html>
