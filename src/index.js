@@ -2,6 +2,7 @@ import './styles/styles.scss';
 import $ from "jquery";
 import AOS from 'aos';
 import './modal';
+import './magnific-popup';
 
 let toggle = document.querySelector('.menu input')
 $('#mobile_menu').on('click', () => {
@@ -23,4 +24,14 @@ $('#view_services').on('click', () => {
 
 AOS.init({
   startEvent: 'DOMContentLoaded',
+});
+
+$('.imagesWork').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery: {
+    enabled: true,
+    navigateByImgClick: true,
+    preload: [0,1]
+  },
 });

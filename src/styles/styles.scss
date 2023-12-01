@@ -4,6 +4,7 @@
 @import './icons';
 @import '../../node_modules/aos/src/sass/aos.scss';
 @import "modal";
+@import "magnific-popup.css";
 
 body{
   background-color: $bg-color;
@@ -464,6 +465,49 @@ html {
 
     }
   }
+  .seven {
+    padding: 80px 0;
+    &_bg {
+      background: url("../images/seven_bg.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 60px;
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow-y: auto;
+      gap: 30px;
+
+      .item {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        img {
+          max-width: 150px;
+          border-radius: 50%;
+          border: 3px solid $white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
   .footer{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -877,6 +921,49 @@ html {
       }
 
     }
+  }
+  .seven {
+    padding: 80px 0;
+    &_bg {
+      background: url("../images/seven_bg.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 60px;
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow-y: auto;
+      gap: 30px;
+
+      .item {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        img {
+          max-width: 150px;
+          border-radius: 50%;
+          border: 3px solid $white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
   }
   .footer{
     padding-top: 30px;
@@ -1299,6 +1386,49 @@ html {
 
     }
   }
+  .seven {
+    padding: 80px 0;
+    &_bg {
+      background: url("../images/seven_bg.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 60px;
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow-y: auto;
+      gap: 30px;
+
+      .item {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        img {
+          max-width: 150px;
+          border-radius: 50%;
+          border: 3px solid $white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
   .footer{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1710,6 +1840,48 @@ html {
       }
 
     }
+  }
+  .seven {
+    padding: 40px 0;
+    &_bg {
+      background: url("../images/seven_bg.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 30px;
+    }
+
+    .list {
+      overflow-y: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      .item {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        img {
+          max-width: 150px;
+          border-radius: 50%;
+          border: 3px solid $white;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
   }
   .footer{
     padding-top: 20px;
